@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript_9</title>
+    <script src="Application.js"></script>
+</head>
+
+<body>
+<form>
+    <input id="Surname" type="text" placeholder="Прізвище" onkeyup="check()"><br><br>
+    <input id="Name" type="text" placeholder="Імя" onkeyup="check()"><br><br>
+    <input id="Age" type="text" placeholder="Вік" onkeyup="check()" onblur="validateAge()"><br><br>
+    <input id="Address" type="text" placeholder="Місце проживання" onkeyup="check()"><br>
+    <p id="Message">Необхідно коректно заповнити всі поля перед відправкою</p>
+    <input id="AjaxGET" type="button" value="Ajax GET" onclick="sendDataByGetMethod()" disabled>
+    <input id="AjaxPOST" type="button" value="Ajax POST" onclick="sendDataByPostMethod()" disabled>
+</form>
+
+<style>
+    .error { border-color: red }
+</style>
+</body>
+</html>
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+P
